@@ -13,15 +13,151 @@
 
 <body>
   <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <header id="home">
+    <h2>BR</h2>
+    <nav>
+      <ul class="navbar" id="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <a class="close" href="#"><img src="images/CloseIcon.png" alt="close"></a>
+      </ul>
+      <a class="hamburger" href="#navbar"><img src="images/MenuIcon.png" alt="menu"></a>
+    </nav>
+  </header>
+  <main>
+    <section id="intro">
+      <h1>Brooklyn <br>Roylance</h1>
+      <ul>
+        <li>Designer</li>
+        <li>Developer</li>
+        <li>Illustrator</li>
+      </ul>
+      <a href="#about"><img src="images/arrow.svg"></a>
+    </section>
+    <section id="about">
+      <article class="heading">
+        <h3>About Me</h3>
+        <h5>
+          Above all else, I am driven by my need to design and create.
+        </h5>
+      </article>
+      <article class="bio">
+        <h4>Bio</h4>
+        <p>
+          I have considered myself an artist since before I could pick up a pencil.  Throughout my life I’ve discovered more and more activities that have allowed me to channel my creativity into productive outlets. These outlets have become my passions. They include but are not limited to: 
+          Illustration, Graphic Design, Web Design and Development.
+        </p>
+      </article>
+      <article class="education">
+        <h4>Education</h4>
+        <div class="entry">
+          <h6 class="period">2022 - Present</h6>
+          <p class="degree">B.S in Web & User Experience</p>
+          <p class="details">
+            Concentration: Full Stack Web Development
+          </p>
+          <p class="details">
+            Minor: Art
+          </p>
+        </div>
+        <div class="entry">
+          <h6 class="period">2022 - 2024</h6>
+          <p class="degree">A.A.S in Web & User Experience</p>
+        </div>
+        <div class="entry">
+          <h6 class="period">2022 - 2023</h6>
+          <p class="degree">COP in Web Essentials</p>
+          <p class="details">
+            GPA: 3.96
+          </p>
+        </div>
+        <div class="entry">
+          <h6 class="period">2020 - 2022</h6>
+          <p class="degree">A.S in Generals</p>
+          <p class="details">
+            GPA: 3.95
+          </p>
+        </div>
+      </article>
+    </section>
+    <section id="projects">
+      <article class="heading">
+        <h3>Projects</h3>
+        <h5>I imagine each project as 
+          a canvas where art, design, and development may come together to craft remarkable digital experiences.</h5>
+      </article>
+      <article class="projectList">
+        <div class="entry" id="entrya">
+          <div class="imgholder">
+          </div>
+          <a class="button">View Site</a>
+          <h6 class="title">RecipesForU</h6>
+          <p class="description">
+            <strong>H’Evans Honey</strong> is a small local Utah company dedicated to providing the best quality 100% raw honey products to the community.
+            I decided to design and develop a small, user-friendly website as an online platform to display their products and broaden their online presence.
+            The website not only showcases their range of delectable honey varieties but also serves as a digital gateway for honey enthusiasts to explore 
+            the unique flavors and benefits of their products. With a clean and intuitive design, the site offers a seamless user experience, making it
+            easier for customers to discover, learn, and connect with H’Evans Honey, while also supporting local businesses in the process.
+          </p>
+        </div>
+        <div class="entry" id="entryb">
+          <div class="imgholder">
+          </div>
+          <a class="button">View Site</a>
+          <h6 class="title">RecipesForU</h6>
+          <p class="description">
+            <strong>RecipesForU</strong>  is a website concept I created that would provide free access to a variety of quality recipes and offer fresh 
+            delivered ingredients at an affordable price. I meticulously crafted the website's design for optimal user experience. The intuitive layout,
+             clean navigation, and appealing visuals make exploring the recipe collection effortless. I paid close attention to ensure that the design 
+             not only promotes user engagement but also places a strong emphasis on usability, making it available to any individual, regardless of their
+              background or experience.
+          </p>
+        </div>
+        <div class="entry" id="entryc">
+          <div class="imgholder">
+          </div>
+          <a class="button">View Site</a>
+          <h6 class="title">RecipesForU</h6>
+          <p class="description">
+            <strong>Salt N Sugars</strong> is an re-imagined website design and development for a small restaurant that unites a bakery, cafe, and diner to
+             provide a large variety of delicious food made from fresh ingredients for its cherished customers.
+             In this project, I designed a streamlined, one-page design that presents the restaurant's diverse menus in an impeccably organized
+             layout, offering users a visually appealing platform to explore the scrumptious offerings. The menu items, complete with their 
+             prices, are elegantly showcased, ensuring that visitors can effortlessly peruse the restaurant's offerings, making dining decisions 
+             a delightful and straightforward experience.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section id="contact">
+      <article class="heading">
+        <h3>Contact Me</h3>
+        <h5>I’m always available 
+          for a conversation, don't hesitate to reach out.</h5>
+      </article>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <label for="number">Phone</label>
+        <input type="text" id="number" name="number">
+        <label for="message" class="message">Message</label>
+        <input type="text" id="message" name="message">
+        <input type="submit" id="submit" value="Submit">
+      </form>
+      <a href="#home">Return to Top</a>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#"><img src="images/linkedin.png"></a></li>
+      <li><a href="#"><img src="images/email.png"></a></li>
+      <li><a href="#"><img src="images/github.png"></a></li>
+    </ul>
+    <p>Copyright &copy 2023 Brookyln Roylance</p>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>

@@ -1,3 +1,328 @@
-/* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+    font-size: 100%;
+    @media screen and (max-width: 1200px) {
+        font-size: 90%;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 85%;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 80%;
+    }
+}
+body {
+    background-color: rgb(14, 14, 14);
+    background-image: url(../images/bg_lrg.png);
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 1200px) {
+        background-color: rgb(14, 14, 14);
+    }
+    @media screen and (max-width: 1000px) {
+        background-color: rgb(14, 14, 14);
+    }
+    @media screen and (max-width: 800px) {
+        background-color: rgb(14, 14, 14);
+    }
+    header {
+        color: rgb(14, 14, 14);
+        height: 35vh;
+        margin: 30px 50px 0px;
+        h2 {
+            background-color: white;
+            border-radius: 100%;
+            float: left;
+            font-family: 'Koulen', sans-serif;
+            font-size: 5.3rem;
+            padding: .65rem 1.25rem;
+        }
+        nav {
+            float: right;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 500;
+            ul {
+                li {
+                    display: inline-block;
+                    padding: .5rem;
+                    a {
+                        color: rgb(14, 14, 14);
+                        text-decoration: none;
+                    }
+                }
+            }
+            @media screen and (min-width: 1200px) {
+                .hamburger, .close {
+                    content: url(none);
+                }
+            }
+            @media screen and (max-width: 1200px) {
+                .hamburger {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                    width: 5rem;
+                    height: 5rem;
+                    img {
+                        background-color: white;
+                        border-radius: 100%;
+                        padding: .65rem;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .close {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                    width: 5rem;
+                    height: 5rem;
+                    img {
+                        background-color: white;
+                        border-radius: 100%;
+                        padding: .65rem;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .navbar {
+                    position: absolute;
+                    z-index: 1000;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: hidden;
+                    list-style: none;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    transform: translateY(-100%);
+                    transition: transform 0.2s ease;
+                  }
+                  .navbar:target {
+                    /* show navbar */
+                    transform: translateY(0);
+                  }
+                  li a {
+                    display: block;
+                    color: white;
+                    /* remove default underline and add our own with padding and border bottom */
+                    text-decoration: none;
+                    border-bottom: 5px solid black;
+                    padding-bottom: 0.5rem;
+                  }
+                  li a:hover, li a:focus {
+                    /* show border bottom */
+                    border-bottom: 1px solid white;
+                  }
+            }
+        }
+    }
+    main {
+        color: whitesmoke;
+        margin: 0 15vw;
+        #intro {
+            height: 65vh;
+            text-align: center;
+            h1 {
+                font-family: 'Koulen', sans-serif;
+                font-size: 6.875rem;
+                line-height: 6.25rem;
+                margin: 0px 0px 50px;
+            }
+            img {
+                margin: 30px 0px;
+                width: 1.5rem;
+            }
+            ul {
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.875rem;
+                font-weight: 600;
+                line-height: 4.375rem;
+                list-style-type: none;
+                padding-left: 0%;
+            }
+        }
+        #about {
+            margin: 30vh 0 0 0;
+            .heading {
+                margin: 0 0 5vh;
+                text-align: right;
+                h3 {
+                    font-family: 'Koulen', sans-serif;
+                    font-size: 5rem;
+                }
+                h5 {
+                    font-size: 1.625rem;
+                }
+            }
+            h4 {
+                font-family: 'Koulen', sans-serif;
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+            .education {
+                .entry {
+                    .period {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    .degree {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        #projects {
+            margin: 30vw 0;
+            .heading {
+                text-align: right;
+                h3 {
+                    font-family: 'Koulen', sans-serif;
+                    font-size: 5rem;
+                }
+                h5 {
+                    font-size: 1.625rem;
+                }
+            }
+            .projectList {
+                display: grid;
+                gap: 1.4%;
+                grid-template-areas: 'entrya entryb entryc';
+                grid-template-columns: 32.4% 32.4% 32.4%;
+                grid-template-rows: 100%;
+                height: 100%;
+                .entry {
+                    .imgholder {
+                        background-color: grey;
+                        width: 100%;
+                        height: 100%;
+                        margin: 1rem 0;
+                        max-height: 20vw;
+                    }
+                    .title {
+                        font-size: 1.625rem;
+                    }
+                    .button {
+                        background-color: whitesmoke;
+                        border-radius: .15rem;
+                        color: rgb(14, 14, 14);
+                        float: right;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        padding: .5rem;
+                        text-decoration: none;
+                    }
+                    .description {
+                        font-size: 1.25rem;
+                        font-weight: 300;
+                    }
+                }
+                #entrya {
+                    grid-area: entrya;
+                    height: 100%;
+                    margin-bottom: 20vw;
+                }
+                #entryb {
+                    grid-area: entryb;
+                    height: 100%;
+                    margin-bottom: 20vw;
+                }
+                #entryc {
+                    grid-area: entryc;
+                    height: 100%;
+                }
+                @media screen and (max-width: 1200px) {
+                    grid-template-areas: 'entrya entryb'
+                                         'entryc entryc';
+                    grid-template-columns: 47.5% 47.5%;
+                    grid-template-rows: auto;
+                    gap: 5%;
+                }
+            }
+        }
+        #contact {
+            margin: 40vh 0 0 0;
+            .heading {
+                text-align: right;
+                h3 {
+                    font-family: 'Koulen', sans-serif;
+                    font-size: 5rem;
+                }
+                h5 {
+                    font-size: 1.625rem;
+                }
+            }
+            form {
+                height: 80vh;
+                label {
+                    background-color: grey;
+                    font-size: 1.625rem;
+                    height: 2.6rem;
+                    margin: 1rem 0 0 0;
+                    text-align: center;
+                    width: calc(33.3% - 1rem);
+                }
+                input {
+                    border: none;
+                    float: right;
+                    height: 2.6rem;
+                    margin: 1rem 0 0 0;
+                    width: calc(66.6%);
+                }
+                .message {
+                    width: 100%;
+                }
+                #message {
+                    height: calc(25vh + 200px);
+                    width: 100%;
+                }
+                #submit {
+                    float: left;
+                    font-size: 1.625rem;
+                    font-weight: 600;
+                    height: 2.6rem;
+                    margin: 1rem 0 0 0;
+                    width: calc(33.3% - 1rem);
+                }
+            }
+            a {
+                color: white;
+                font-size: 1.25rem;
+                align-self: center;
+            }
+        }
+    }
+    footer {
+        margin: 25vh 0 0 0;
+        text-align: center;
+        width: 100%;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin: 3rem;
+                img {
+                    border: 5px solid black;
+                    border-radius: 100%;
+                    padding: 5px;
+                    width: 4.5rem;
+                }
+            }
+        }
+    }
+}
