@@ -227,6 +227,19 @@ body {
                         padding: .5rem;
                         text-decoration: none;
                     }
+                    .button:hover {
+                        background-color: yellow;
+                    }
+                    .disabledbutton {
+                        background-color: rgb(145, 145, 145);
+                        border-radius: .15rem;
+                        color: rgb(14, 14, 14);
+                        float: right;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        padding: .5rem;
+                        text-decoration: none;
+                    }
                     .description {
                         font-size: 1.25rem;
                         font-weight: 300;
@@ -299,11 +312,17 @@ body {
                     margin: 1rem 0 0 0;
                     width: calc(33.3% - 1rem);
                 }
+                #submit:hover {
+                    background-color: yellow;
+                }
             }
             a {
                 color: white;
                 font-size: 1.25rem;
                 align-self: center;
+            }
+            a:hover {
+                color: yellow;
             }
         }
     }
